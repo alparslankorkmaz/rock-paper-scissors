@@ -1,5 +1,10 @@
 const choices = ['rock', 'paper', 'scissors'];
 const winners = [];
+const startGame = document.getElementById('startBtn');
+
+startGame.addEventListener('click', function() {
+    game();
+});
 
 function game() {
     for(let i = 0; i < 5; i++) {
@@ -74,4 +79,4 @@ function logRound(playerChoice, computerChoice, winner, round) {
     console.log('---------------------------')
 }
 
-game();
+
