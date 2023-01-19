@@ -6,20 +6,6 @@ const scissors = document.querySelector("#scissors");
 const pInfo = document.querySelector("#pInfo");
 const cInfo = document.querySelector("#cInfo");
 const wInfo = document.querySelector("#wInfo");
-const container = document.querySelector("#container");
-
-// function playRound(round) {
-//   const playerSelection = getPlayerChoice();
-//   const computerSelection = getComputerChoice();
-//   const winner = checkWinner(playerSelection, computerSelection);
-//   winners.push(winner);
-//   logRound(playerSelection, computerSelection, winner, round);
-// }
-
-// function playRound() {
-//   pInfo.textContent = `Player chose: ${}`;
-//   cInfo.textContent = `Computer chose: ${getComputerChoice()}`;
-// }
 
 rock.addEventListener("click", () => {
   playerSelection = choices[0];
@@ -66,21 +52,3 @@ function checkWinner(playerChoice, computerChoice) {
     return "Computer";
   }
 }
-
-// function logWins() {
-//   let playerWins = winners.filter((item) => item == "player").length;
-//   let computerWins = winners.filter((item) => item == "computer").length;
-//   let ties = winners.filter((item) => item == "tie").length;
-//   console.log("Results:");
-//   console.log("Player wins:", playerWins);
-//   console.log("Computer wins:", computerWins);
-//   console.log("Ties:", ties);
-// }
-
-// function logRound(playerChoice, computerChoice, winner, round) {
-//   console.log("Round:", round);
-//   console.log("Player Chose:", playerChoice);
-//   console.log("Computer Chose:", computerChoice);
-//   console.log(winner, "won the round!");
-//   console.log("---------------------------");
-// }
